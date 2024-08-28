@@ -1,0 +1,34 @@
+body {
+  background-color:#141414 !important;
+  color: white !important;
+}
+.mov-app row{
+overflow-x: auto !important;
+flex-wrap: nowrap !important ;
+
+}
+.image-container {
+  position: relative;
+  transition: 0.3s;
+}
+.image-container:hover{
+  cursor: pointer;
+  transform: scale(1.1) ;
+}
+.image-container:hover .overlay{
+  z-index: 10;
+  opacity: 1;
+  padding: 12px;
+  bottom: 10px;
+}
+.image-container .overlay{
+ position: absolute;
+ background-color: rgba(0, 0, 0, 0.8); 
+ width: 100%;
+ transition: 0.5s ease;
+opacity: 0;
+bottom: 0;
+font-size: 12px;
+
+text-align: center;
+}
